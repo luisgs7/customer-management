@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import logout
 
 def home(request):
@@ -7,4 +7,4 @@ def home(request):
 
 def my_logout(request):
     logout(request)
-    return render(request, 'home.html')
+    return redirect('home')

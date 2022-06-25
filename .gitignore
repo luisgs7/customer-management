@@ -5,6 +5,7 @@ __pycache__/
 
 # Config
 media/
+static/
 
 # C extensions
 *.so

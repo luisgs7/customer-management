@@ -143,5 +143,3 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = 'person_list'
 
 #LOGOUT_REDIRECT_URL = 'home'
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

@@ -21,8 +21,10 @@ from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 
 from clients import urls as clients_urls
+from home import urls as home_urls
 
 urlpatterns = [
+    path('', home_urls, name="home"),
     path('login/', auth_views.login, name='login'),
     path('logout/', auth_views.logout, name='logout'),
     path('clients/', include(clients_urls)),
